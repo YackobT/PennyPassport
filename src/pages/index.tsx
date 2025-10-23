@@ -8,13 +8,18 @@ const HomePage = () => {
       <Head>
         <title>Travel Made Epic - Explore Smarter, Live Bolder</title>
         <meta name="description" content="Your ultimate guide to traveling better and smarter, on any budget." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/PennyPassport/favicon.ico" />
       </Head>
 
       {/* Hero Section */}
-      <section className="bg-cover bg-center h-screen" style={{ backgroundImage: "url('https://via.placeholder.com/1920x1080')" }}>
-        <div className="flex items-center justify-center h-full bg-black bg-opacity-50">
-          <div className="text-center text-white">
+      <section
+        className="bg-cover bg-center min-h-screen flex items-center justify-center"
+        style={{
+          backgroundImage: "url('/PennyPassport/images/banner.jpg')", // <-- LOCAL HERO/BANNER IMAGE
+        }}
+      >
+        <div className="flex items-center justify-center h-full w-full bg-black bg-opacity-50">
+          <div className="text-center text-white w-full">
             <h1 className="text-5xl font-bold font-heading mb-4">Start Your Journey Today</h1>
             <p className="text-xl font-body mb-8">Discover Your Next Adventure</p>
             <Link href="/destinations" className="bg-mustard-yellow text-white font-bold py-3 px-6 rounded hover:bg-yellow-600">
@@ -29,9 +34,8 @@ const HomePage = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold font-heading text-center mb-12">Featured Posts</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Placeholder for featured posts */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <Image src="https://via.placeholder.com/400x250" alt="Post thumbnail" className="w-full h-48 object-cover" width={400} height={250} />
+              <img src="/PennyPassport/images/Thumbnailtips.jpg" alt="Post thumbnail tips" className="w-full h-48 object-cover" />
               <div className="p-6">
                 <h3 className="text-xl font-bold font-heading mb-2">Top 10 Budget Travel Hacks</h3>
                 <p className="font-body text-gray-700 mb-4">Travel more for less with these proven tips.</p>
@@ -41,7 +45,7 @@ const HomePage = () => {
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <Image src="https://via.placeholder.com/400x250" alt="Post thumbnail" className="w-full h-48 object-cover" width={400} height={250} />
+              <img src="/PennyPassport/images/Thumbnailrail.jpg" alt="Post thumbnail rail" className="w-full h-48 object-cover" />
               <div className="p-6">
                 <h3 className="text-xl font-bold font-heading mb-2">Why Solo Travel Changed My Life</h3>
                 <p className="font-body text-gray-700 mb-4">A personal story of discovery and empowerment.</p>
@@ -51,7 +55,7 @@ const HomePage = () => {
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <Image src="https://via.placeholder.com/400x250" alt="Post thumbnail" className="w-full h-48 object-cover" width={400} height={250} />
+              <img src="/PennyPassport/images/Thumbnailsky.jpg" alt="Post thumbnail sky" className="w-full h-48 object-cover" />
               <div className="p-6">
                 <h3 className="text-xl font-bold font-heading mb-2">A Guide to Sustainable Travel</h3>
                 <p className="font-body text-gray-700 mb-4">How to be a responsible tourist.</p>
@@ -89,12 +93,4 @@ const HomePage = () => {
             <Link href="/solo-travel" className="text-xl font-bold font-heading text-gray-800 hover:text-terracotta">Solo Travel</Link>
             <Link href="/culture-history" className="text-xl font-bold font-heading text-gray-800 hover:text-terracotta">Culture & History</Link>
             <Link href="/hiking-outdoors" className="text-xl font-bold font-heading text-gray-800 hover:text-terracotta">Hiking & Outdoors</Link>
-            <Link href="/usa-travel" className="text-xl font-bold font-heading text-gray-800 hover:text-terracotta">USA Travel</Link>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-};
-
-export default HomePage;
+            <Link href="/usa-travel" className="text-xl font-bold font-heading text-gray-800 hover:text-terr
